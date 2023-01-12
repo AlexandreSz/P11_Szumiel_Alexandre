@@ -1,0 +1,30 @@
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+    background-color: #f6f6f6;
+    padding: 56px 50px 56px 50px;
+    border-radius: 20px;
+    gap: 60px;
+    
+    & .card{
+        position: relative;
+        & img{
+            width: 340px;
+            height: 340px;
+            border-radius: 8px;
+            object-fit: cover;
+
+        }
+    }
+    .card-content {
+        position: absolute;
+        font-size: 18px;
+        font-weight: 500;
+        bottom: 10px;
+        left: 10px;
+        color: white;
+        max-width: 300px;
+      }
+}
