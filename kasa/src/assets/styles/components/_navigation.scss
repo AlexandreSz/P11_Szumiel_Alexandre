@@ -1,0 +1,33 @@
+.navigation{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    
+    & ul{
+        display: inline-flex;
+        justify-content: space-between;
+        & a{
+            text-decoration: none;
+        & li{
+            list-style: none;
+            color: red;
+            margin-left: 3rem;
+            font-size: 20px;
+            }
+        }
+        .nav-active{
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                left: 35%;
+                top: 24px;
+                min-width: 80px;
+                border: 1px red solid;
+                border-radius: 10px;
+                background-color: red;
+            }
+        }
+    }
+}
+
