@@ -1,0 +1,40 @@
+.section_dropdowns {
+    max-width: 1023px;
+    margin: 0 auto;
+}
+
+.dropdown {
+    margin: 50px 0;
+}
+
+.dropdown.superRadius{
+    border-radius: 1rem;
+}
+
+.dropdown_header {
+    height: 52px;
+    background-color: rgb(241, 88, 88);;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.dropdown p,
+.dropdown ul {
+    color: rgb(241, 88, 88);
+    font-size: 24px;
+    font-weight: 400;
+    background-color: whitesmoke;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0;
+    padding: 36px 18px 19px 18px;
+}

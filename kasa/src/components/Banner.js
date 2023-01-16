@@ -1,12 +1,11 @@
 import React from 'react'
-import BannerImg from '../assets/images/IMGbanner.svg'
 
-const Banner = () => {
+const Banner = ({ text, img }) => {
   return (
     <div className="banner-container">
-      <img src={BannerImg} alt="" />
+      <img src={img} alt="" className="banner-Img" />
       <div id="bg"></div>
-      <h1>Chez vous, partout et ailleurs</h1>
+      <h1>{text}</h1>
     </div>
   )
 }
