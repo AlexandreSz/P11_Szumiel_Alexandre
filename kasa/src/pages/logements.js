@@ -1,9 +1,10 @@
 import React from 'react'
+import Carrousel from '../components/Carrousel'
 
 const Logements = () => {
   return (
     <div>
-      <h1>Logement</h1>
+      <Carrousel />
     </div>
   )
 }

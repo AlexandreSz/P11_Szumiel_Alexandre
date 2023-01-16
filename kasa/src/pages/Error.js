@@ -7,7 +7,7 @@ const Erreur = () => {
     <div>
       <Navigation />
       <section className="page404Section">
-        <h7>404</h7>
+        <h3 className="titre404">404</h3>
         <p>Oups! La page que vous demandez n'existe pas.</p>
         <Link to="/" className="backHomeLink">
           Retourner sur la page d'accueil
