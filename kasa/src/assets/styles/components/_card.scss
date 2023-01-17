@@ -20,11 +20,15 @@
     }
     .card-content {
         position: absolute;
-        font-size: 18px;
-        font-weight: 500;
-        bottom: 10px;
-        left: 10px;
-        color: white;
-        max-width: 300px;
+        bottom: 4px;
+        border-radius: 8px;
+        width:100%;
+        background-color: rgba(39, 38, 38, 0.555);
+        & h3{
+            margin-left: 5px;
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+        }
       }
 }
