@@ -1,0 +1,21 @@
+#tags {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.tag{
+    text-align: center;
+    background-color: #FF6060;
+    border-radius: 5px;
+    padding: 2%;
+    & p{
+        margin: 0;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+}

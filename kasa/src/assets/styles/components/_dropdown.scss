@@ -10,7 +10,7 @@ details[open] summary .chevron-down {
 summary {
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bolder;
     color: #FFFFFF;
     background-color: #FF6060;
@@ -23,6 +23,8 @@ summary {
 
 .chevron-down {
     transition: all 0.3s;
+    height: 30%;
+    margin-top: 5px;
 }
 
 details p, details ul {
@@ -34,7 +36,7 @@ details p, details ul {
 
 details p, details li{
     font-weight: 400;
-    font-size: 20px;
+    font-size: 24px;
     color: #FF6060;
 }
 
