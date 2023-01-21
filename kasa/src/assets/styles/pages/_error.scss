@@ -1,21 +1,36 @@
 .titre404 {
-    font-size: 288px;
-    font-weight: 700;
-    margin-top: 100px;
-    margin-bottom: 20px;
+  font-size: 288px;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 .page404Section {
-    text-align: center;
-    color: rgb(241, 88, 88);
+  text-align: center;
+  color: rgb(241, 88, 88);
 }
 
 .page404Section p {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .backHomeLink {
+  font-size: 18px;
+  text-decoration: underline;
+  color: rgb(241, 88, 88);
+}
+
+// Mobile
+@media screen and (max-width: 768px) {
+  .titre404 {
+    font-size: 96px;
+  }
+  .page404Section p {
     font-size: 18px;
-    text-decoration: underline;
-    color: rgb(241, 88, 88);
+  }
+  .backHomeLink {
+    display: block;
+    margin-top: 133px;
+    font-size: 14px;
+  }
 }

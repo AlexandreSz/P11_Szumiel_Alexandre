@@ -1,33 +1,67 @@
-.navigation{
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    
-    & ul{
-        display: inline-flex;
-        justify-content: space-between;
-        & a{
-            text-decoration: none;
-        & li{
-            list-style: none;
-            color: red;
-            margin-left: 3rem;
-            font-size: 20px;
-            }
-        }
-        .nav-active{
-            position: relative;
-            &::after{
-                content: "";
-                position: absolute;
-                left: 35%;
-                top: 24px;
-                min-width: 80px;
-                border: 1px red solid;
-                border-radius: 10px;
-                background-color: red;
-            }
-        }
-    }
-}
+.navigation {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 
+  & ul {
+    display: inline-flex;
+    justify-content: space-between;
+    & a {
+      text-decoration: none;
+      & li {
+        list-style: none;
+        color: red;
+        margin-left: 3rem;
+        font-size: 20px;
+      }
+    }
+    .nav-active {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        left: 35%;
+        top: 24px;
+        min-width: 80px;
+        border: 1px red solid;
+        border-radius: 10px;
+        background-color: red;
+      }
+    }
+  }
+}
+/* Mobile*/
+@media screen and (max-width: 768px) {
+  body {
+    margin: 20px 10px;
+  }
+  .navigation {
+    img {
+      width: 145px;
+      height: 47px;
+    }
+    & ul {
+      display: inline-flex;
+      justify-content: space-between;
+      & a {
+        & li {
+          font-size: 12px;
+          margin-left: 8px;
+          text-transform: uppercase;
+        }
+      }
+      .nav-active {
+        &::after {
+          content: '';
+          position: absolute;
+          left: 8%;
+          top: 17px;
+          min-width: 58px;
+          border: 1px red solid;
+          border-radius: 10px;
+          background-color: red;
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,6 @@ import Door from '../assets/iconesfooter/Vectorporte.png'
 import K from '../assets/iconesfooter/VectorKfoot.png'
 import S from '../assets/iconesfooter/Vectorsfoot.png'
 import A from '../assets/iconesfooter/Vectorafoot.png'
-import Droits from '../assets/iconesfooter/© 2020 Kasa. All rights reservedtexte.png'
 
 const Footer = () => {
   return (
@@ -17,7 +16,7 @@ const Footer = () => {
         <img src={A} alt="a" />
       </div>
       <div className="footer-info">
-        <img src={Droits} alt="droits" />
+        <p>© 2020 Kasa. All rights reserved</p>
       </div>
     </footer>
   )

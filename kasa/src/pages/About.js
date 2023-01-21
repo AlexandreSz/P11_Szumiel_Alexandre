@@ -1,7 +1,7 @@
 import React from 'react'
 import Navigation from '../components/Navigation'
-import Banner from '../components/Banner'
-import aboutImg from '../assets/images/ImgBannerAbout.png'
+import BannerDesktop from '../assets/images/ImgBannerAbout.png'
+import BannerMobile from '../assets/images/gustavo-alves-YOXSC4zRcxw-unsplash 1mobileAbout.png'
 import Dropdown from '../components/Dropdown'
 import Footer from '../components/Footer'
 
@@ -9,7 +9,21 @@ const About = () => {
   return (
     <div>
       <Navigation />
-      <Banner img={aboutImg} />
+      {/* Banner */}
+      <div id="title">
+        <img
+          id="title-banner-desktop"
+          src={BannerDesktop}
+          alt="Bannière avec un paysage"
+        />
+        <img
+          id="title-banner-mobile"
+          src={BannerMobile}
+          alt="Bannière avec un paysage"
+        />
+        <div id="title-bg"></div>
+      </div>
+
       <section className="section_dropdowns">
         <Dropdown
           title="Fiabilité"

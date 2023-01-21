@@ -1,27 +1,126 @@
 /* Intro logement */
-#logement-intro{
-    color: #FF6060;
-    margin-top: 2%;
+#logement-intro {
+  color: #ff6060;
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+#intro-title {
+  font-size: 36px;
+  line-height: 142.6%;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 90%;
+}
+#intro-location {
+  font-size: 18px;
+  margin-top: 1%;
+  margin-bottom: 3%;
 }
 
-#intro-title{
-    font-size: 36px;
+/* dropdown*/
+#logement-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Host info + rate*/
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Stars */
+#host-stars {
+  display: flex;
+  margin-right: 0;
+  margin-left: auto;
+}
+.star {
+  width: 30px;
+  height: 30px;
+}
+.star-red {
+  fill: #ff6060;
+}
+.star-grey {
+  fill: #e3e3e3;
+}
+
+#host-info-picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  float: right;
+  margin-left: 30px;
+}
+
+#host-info-name {
+  width: 93px;
+  width: 52px;
+  font-size: 18px;
+  font-weight: 500;
+  float: right;
+}
+// Mobile
+@media screen and (max-width: 768px) {
+  /* Intro logement */
+  #logement-intro {
+    display: flex;
+    color: #ff6060;
+    margin-top: 2%;
+    flex-direction: column;
+    gap: 16px;
+  }
+  #intro-title {
+    font-size: 18px;
     line-height: 142.6%;
     margin-top: 0;
     margin-bottom: 0;
     width: 90%;
-}
-
-#intro-location{
-    font-size: 18px;
-        margin-top: 1%;
+  }
+  #intro-location {
+    font-size: 14px;
+    margin-top: 1%;
     margin-bottom: 3%;
+  }
+
+  #host-info-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 5px;
+  }
+
+  #host-info-name {
+    width: 93px;
+    width: 33px;
+    font-size: 12px;
+    float: right;
+    margin: 0 10px;
+  }
+  #host-stars {
+    display: flex;
+    align-items: center;
+  }
+  .star {
+    width: 15px;
+    height: 15px;
+    float: left;
+  }
+  .info {
+    display: block;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+  }
+  /* dropdown*/
+  #logement-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
 }
-
-    /* dropdown*/
-    #logement-info{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
-
