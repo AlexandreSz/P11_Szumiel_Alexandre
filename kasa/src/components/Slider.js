@@ -19,6 +19,21 @@ const Slider = () => {
     setCurrent(current === 0 ? pictures.length - 1 : current - 1)
   }
 
+  const Images = pictures.map((img, index) => {
+    return (
+      <div key={index}>
+        {index === current && (
+          <img src={img} alt="Photos du logement" className="slider-image" />
+        )}
+        {index === current && (
+          <span className="slider-image-number">
+            {current + 1}/{pictures.length}
+          </span>
+        )}
+      </div>
+    )
+  })
+
   return (
     <section id="slider">
       {/* Showing slider navigation buttons */}
@@ -40,24 +55,7 @@ const Slider = () => {
       )}
 
       {/* Images */}
-      {pictures.map((img, index) => {
-        return (
-          <div key={index}>
-            {index === current && (
-              <img
-                src={img}
-                alt="Photos du logement"
-                className="slider-image"
-              />
-            )}
-            {index === current && (
-              <span className="slider-image-number">
-                {current + 1}/{pictures.length}
-              </span>
-            )}
-          </div>
-        )
-      })}
+      {Images}
     </section>
   )
 }
