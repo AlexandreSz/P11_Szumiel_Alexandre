@@ -7,6 +7,14 @@ import Card from '../components/Card'
 import Footer from '../components/Footer'
 
 const Home = () => {
+  const Cards = data.map((logement, index) => (
+    <Card
+      key={`${logement.title}-${index}`}
+      id={logement.id}
+      title={logement.title}
+      cover={logement.cover}
+    />
+  ))
   return (
     <div>
       <Navigation />
@@ -25,16 +33,7 @@ const Home = () => {
         <div id="titleH-bg"></div>
         <h1 id="titleH-home">Chez vous, partout et ailleurs</h1>
       </div>
-      <div className="card-section">
-        {data.map((logement, index) => (
-          <Card
-            key={`${logement.title}-${index}`}
-            id={logement.id}
-            title={logement.title}
-            cover={logement.cover}
-          />
-        ))}
-      </div>
+      <div className="card-section">{Cards}</div>
       <Footer />
     </div>
   )
