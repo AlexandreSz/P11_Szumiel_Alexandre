@@ -1,19 +1,17 @@
 import React from 'react'
-import data from '../data/data.json'
 import { Link } from 'react-router-dom'
 
-const Card = () => {
-  return data.map((item) => (
-    <div className="card" key={item.id}>
-      <Link to={`/logement/${item.id}`}>
-        <img id={item.id} src={item.cover} alt={item.title} />
+const Card = ({ id, title, cover }) => {
+  return (
+    <div className="card">
+      <Link to={`/logement/${id}`}>
+        <img id={id} src={cover} alt={title} />
       </Link>
-
       <div className="card-content">
-        <h3>{item.title}</h3>
+        <h3>{title}</h3>
       </div>
     </div>
-  ))
+  )
 }
 
 export default Card

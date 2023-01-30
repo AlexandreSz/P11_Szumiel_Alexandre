@@ -1,4 +1,5 @@
 import React from 'react'
+import data from '../data/data.json'
 import Navigation from '../components/Navigation'
 import BannerDesktop from '../assets/images/IMGbanner.png'
 import BannerMobile from '../assets/images/IMGmobilebannerHome.png'
@@ -25,7 +26,14 @@ const Home = () => {
         <h1 id="titleH-home">Chez vous, partout et ailleurs</h1>
       </div>
       <div className="card-section">
-        <Card />
+        {data.map((logement, index) => (
+          <Card
+            key={`${logement.title}-${index}`}
+            id={logement.id}
+            title={logement.title}
+            cover={logement.cover}
+          />
+        ))}
       </div>
       <Footer />
     </div>
